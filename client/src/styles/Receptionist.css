@@ -1,0 +1,54 @@
+/* ============================================================
+   RECEPTIONIST DASHBOARD — Extra Styles
+   ============================================================ */
+
+.recep-sidebar {
+  background: linear-gradient(180deg, #1e3a5f 0%, #1a4971 60%, #1e5f8e 100%) !important;
+}
+
+.recep-badge {
+  background: rgba(59,130,246,0.25) !important;
+  color: #93c5fd !important;
+  border: 1px solid rgba(59,130,246,0.3);
+}
+
+.recep-avatar {
+  background: #2563eb !important;
+}
+
+.db-nav-item.locked {
+  opacity: 0.55;
+}
+
+.nav-lock {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.locked-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 16px;
+  text-align: center;
+}
+
+.lock-icon {
+  font-size: 64px;
+  filter: grayscale(0.3);
+}
+
+.locked-screen h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f4c47;
+}
+
+.locked-screen p {
+  font-size: 15px;
+  color: #4b5563;
+  max-width: 360px;
+  line-height: 1.6;
+}

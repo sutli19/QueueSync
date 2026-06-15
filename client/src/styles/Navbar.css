@@ -1,0 +1,114 @@
+/* ============================================================
+   NAVBAR — Floating Glass Pill
+   ============================================================ */
+.navbar {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 48px);
+  max-width: 1160px;
+  height: 72px;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow:
+    0 8px 32px rgba(15, 118, 110, 0.10),
+    0 2px 8px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82);
+
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+.navbar:hover {
+  box-shadow:
+    0 12px 44px rgba(15, 118, 110, 0.14),
+    0 4px 12px rgba(0, 0, 0, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82);
+}
+
+.nav-container {
+  height: 100%;
+  padding: 0 20px 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.nav-logo-img {
+  height: 66px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+.nav-logo-text {
+  font-size: 21px;
+  font-weight: 900;
+  color: #0f766e;
+  letter-spacing: -0.5px;
+  font-family: 'Georgia', serif;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav-menu a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.nav-menu a:hover {
+  color: #0f766e;
+  background: rgba(15, 118, 110, 0.07);
+}
+
+.nav-btn-login {
+  background: linear-gradient(135deg, #0f766e, #14b8a6) !important;
+  color: white !important;
+  padding: 9px 22px !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  box-shadow: 0 4px 16px rgba(15, 118, 110, 0.30) !important;
+  transition: all 0.25s ease !important;
+}
+.nav-btn-login:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 22px rgba(15, 118, 110, 0.44) !important;
+}
+
+.nav-btn-register {
+  border: 1.5px solid #0f766e !important;
+  color: #0f766e !important;
+  padding: 9px 20px !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  background: transparent !important;
+  transition: 0.2s ease !important;
+}
+.nav-btn-register:hover {
+  background: rgba(15, 118, 110, 0.06) !important;
+}
+
+@media (max-width: 768px) {
+  .navbar { top: 8px; width: calc(100% - 24px); height: 62px; border-radius: 16px; }
+  .nav-menu a { font-size: 12px; padding: 6px 9px; }
+  .nav-logo-text { font-size: 17px; }
+  .nav-logo-img { height: 50px; }
+  .nav-btn-login, .nav-btn-register { display: none !important; }
+}
