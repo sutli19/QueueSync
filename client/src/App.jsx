@@ -14,7 +14,7 @@ import Navbar from "./components/Navbar";
 // =============================================================================
 const Login           = lazy(() => import("./pages/Login"));
 const Signup          = lazy(() => import("./pages/Signup"));
-const ForgotPassword  = lazy(() => import("./pages/Forgotpassword"));
+const ForgotPassword  = lazy(() => import("./pages/ForgotPassword"));
 const Payment         = lazy(() => import("./pages/Payment"));
 
 const Dashboard             = lazy(() => import("./pages/Dashboard"));
