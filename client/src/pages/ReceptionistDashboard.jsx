@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import "../styles/Dashboard.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://queuesync.onrender.com/api";
 const authHead = () => ({ Authorization: `Bearer ${localStorage.getItem("token")}` });
 const jsonHead = () => ({ "Content-Type": "application/json", ...authHead() });
 

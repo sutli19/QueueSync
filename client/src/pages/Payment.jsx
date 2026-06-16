@@ -50,7 +50,7 @@ export default function Payment() {
 
     try {
       const token = localStorage.getItem("token");
-      const res   = await fetch("http://localhost:5000/api/payment/submit-utr", {
+      const res   = await fetch("https://queuesync.onrender.com/api/payment/submit-utr", {
         method:  "POST",
         headers: {
           "Content-Type":  "application/json",

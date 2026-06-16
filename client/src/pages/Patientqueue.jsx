@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
 /* ─── Config ─── */
-const API = "http://localhost:5000/api";
+const API = "https://queuesync.onrender.com/api";
 
 /* ─── Inline CSS ─── */
 const CSS = `

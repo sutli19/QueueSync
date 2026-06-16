@@ -28,7 +28,7 @@ export default function Login() {
           ? { email: form.identifier, password: form.password }
           : { username: form.identifier, password: form.password };
 
-      const res  = await fetch("http://localhost:5000/api/auth/login", {
+      const res  = await fetch("https://queuesync.onrender.com/api/auth/login", {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body:    JSON.stringify(body),
@@ -75,7 +75,7 @@ export default function Login() {
         // Doctor — check subscription status
         if (data.role === "doctor") {
           try {
-            const subRes = await fetch("http://localhost:5000/api/payment/status", {
+            const subRes = await fetch("https://queuesync.onrender.com/api/payment/status", {
               headers: { "Authorization": `Bearer ${data.token}` },
             });
             const subData = await subRes.json();

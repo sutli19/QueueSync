@@ -48,7 +48,7 @@ export default function ForgotPassword() {
     if (!email) { setStatus({ msg: "Please enter your email.", type: "error" }); return; }
     setLoading(true); setStatus({ msg: "", type: "" });
     try {
-      const res = await fetch("http://localhost:5000/api/auth/forgot-password/question", {
+      const res = await fetch("https://queuesync.onrender.com/api/auth/forgot-password/question", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
@@ -66,7 +66,7 @@ export default function ForgotPassword() {
     if (!answer.trim()) { setStatus({ msg: "Please enter your answer.", type: "error" }); return; }
     setLoading(true); setStatus({ msg: "", type: "" });
     try {
-      const res = await fetch("http://localhost:5000/api/auth/forgot-password/verify", {
+      const res = await fetch("https://queuesync.onrender.com/api/auth/forgot-password/verify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, answer: answer.toLowerCase().trim() }),
@@ -84,7 +84,7 @@ export default function ForgotPassword() {
     if (newPassword !== confirmPassword) { setStatus({ msg: "Passwords don't match.", type: "error" }); return; }
     setLoading(true); setStatus({ msg: "", type: "" });
     try {
-      const res = await fetch("http://localhost:5000/api/auth/forgot-password/reset", {
+      const res = await fetch("https://queuesync.onrender.com/api/auth/forgot-password/reset", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, answer: answer.toLowerCase().trim(), newPassword }),
