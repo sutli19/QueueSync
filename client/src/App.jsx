@@ -21,13 +21,13 @@ const Dashboard             = lazy(() => import("./pages/Dashboard"));
 const ReceptionistDashboard = lazy(() => import("./pages/ReceptionistDashboard"));
 const Features              = lazy(() => import("./pages/Features"));
 const Pricing               = lazy(() => import("./pages/Pricing"));
-const ContactUs             = lazy(() => import("./pages/Contactus"));
+const ContactUs             = lazy(() => import("./pages/ContactUs"));
 const About                 = lazy(() => import("./pages/About"));
 const Changelog             = lazy(() => import("./pages/Changelog"));
-const PatientQueue          = lazy(() => import("./pages/Patientqueue"));
-const PrivacyPolicy         = lazy(() => import("./pages/Privacypolicy"));
+const PatientQueue          = lazy(() => import("./pages/PatientQueue"));
+const PrivacyPolicy         = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfService        = lazy(() => import("./pages/TermsOfService"));
-const CookiePolicy          = lazy(() => import("./pages/Cookiepolicy"));
+const CookiePolicy          = lazy(() => import("./pages/CookiePolicy"));
 
 import Home from "./pages/Home";
 
