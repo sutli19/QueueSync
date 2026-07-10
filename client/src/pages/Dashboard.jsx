@@ -350,7 +350,7 @@ const CSS = `
 .team-actions{display:flex;gap:8px;align-items:center;}
 `;
 
-const API        = "https://queuesync.onrender.com/api";
+const API        = "https://queuesync-1-n89l.onrender.com/api";
 const getToken   = () => localStorage.getItem("token");
 const authHead   = () => ({ Authorization: `Bearer ${getToken()}` });
 const jsonHead   = () => ({ "Content-Type": "application/json", ...authHead() });

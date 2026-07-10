@@ -131,7 +131,7 @@ function DoctorGuard({ children }) {
     }
 
     // Doctor → verify subscription
-    fetch("https://queuesync.onrender.com/api/payment/status", {
+    fetch("https://queuesync-1-n89l.onrender.com/api/payment/status", {
       headers: { "Authorization": `Bearer ${token}` },
     })
       .then((r) => r.json())
